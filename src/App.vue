@@ -1,14 +1,14 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import TopNav from './components/TopNav.vue'
-import VideoPlayer from './components/VideoPlayer.vue';
+import VideoPlayer from './components/VideoPlayer.vue'
 </script>
-
+<!-- Setting up the top navigation bar and header for the site -->
 <template>
   <header class="header">
     
     <img class="avatar" height="150px" src="./assets/dan.jpeg" alt="Photo of Daniel Allen" />
-    
+     
     <div class="wrapper">
       <TopNav msg="PORTFOLIO DANIEL ALLEN 2023" />
       <nav>
@@ -20,6 +20,7 @@ import VideoPlayer from './components/VideoPlayer.vue';
     
   </header>
   
+  <!-- Including the video effect for the site -->
   <body>
     <div class="video">
     <VideoPlayer class="router-view-cyan"/>
@@ -35,7 +36,7 @@ import VideoPlayer from './components/VideoPlayer.vue';
 
 <style scoped>
 .router-view-cyan {
-  background-color: cyan; /* Set the background color to cyan */
+  background-color: cyan; 
 }
 
 .view-container {
@@ -57,13 +58,11 @@ header {
   max-height: 100vh;
 }
 
-
 /* This is indicating the active link in the nav bar */
 nav a.router-link-exact-active {
   color: rgb(72, 171, 242);
 }
-/* Color and text are css variables that are defined in the global css files */
-
+/* Not sure why it says no references when these are actually being used... */
 nav a.router-link-exact-active:hover {
   background-color: transparent;
 }
@@ -72,22 +71,17 @@ nav a {
   display: inline-block;
   color: white;
   padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
 }
-
-
 
 nav a:first-of-type {
   border: 0;
 }
 
-
-@media (min-width: 500px) {
+@media (min-width: 600px) {
   header {
     display: flex;
     place-items: center;
   }
-
 
   .video {
   width: 100%;
@@ -96,14 +90,14 @@ nav a:first-of-type {
   }
   
   .header {
-  width: 100%; /* Span the width of the page */
-  background-color: #333; /* Set your desired background color */
-  color: #fff; /* Set your desired text color */
-  position: fixed; /* Keep the header fixed at the top */
-  top: 0; /* Position it at the top */
-  padding: 10px 0; /* Add padding as needed */
-  left: 0; /* Horizontally align to the left */
-  z-index: 999; /* Make the header appear on top */
+  width: 100%; 
+  background-color: #333; 
+  color: #fff; 
+  position: fixed; 
+  top: 0; 
+  padding: 10px 0; 
+  left: 0; 
+  z-index: 999; 
   }
 
   nav {
@@ -114,7 +108,5 @@ nav a:first-of-type {
     margin-top: 1rem;
   }
 }
-
-
 
 </style>

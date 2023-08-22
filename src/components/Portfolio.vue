@@ -1,4 +1,5 @@
 <script setup>
+// Imports required
 import VideoPlayer from './VideoPlayer2.vue';
 </script>
 <template>
@@ -14,6 +15,7 @@ import VideoPlayer from './VideoPlayer2.vue';
   </div>
   <div class="card-content">
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, pariatur autem suscipit corrupti libero sequi iste atque optio rem eos ad dignissimos, neque, cupiditate aliquam aperiam similique amet. Libero quasi repellat recusandae laudantium, autem ad sequi consequatur aliquam debitis ab? Tempora placeat perferendis beatae ipsam in! Veniam, magni? Accusamus, molestias! </p>
+    <!-- Setting up the table. -->
     <table>
       <tr>
         <th>Project</th>
@@ -46,7 +48,7 @@ import VideoPlayer from './VideoPlayer2.vue';
       
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae vero tempora blanditiis voluptas tempore fugiat, debitis, tenetur dolorem, reiciendis quibusdam nemo esse sunt ducimus. Animi, voluptas officiis! Sed, maiores suscipit.</p>
     </div>
-    
+    <!-- Getting the video in place -->
     <div class = "video-wrapper">
       <VideoPlayer class = "movie"/>
     </div>
@@ -142,11 +144,11 @@ import VideoPlayer from './VideoPlayer2.vue';
 .card-content {
   display: flex;
   flex-direction: column;
-  align-items: center; /* This will center its direct children horizontally */
-  justify-content: center; /* If you also want to center it vertically */
+  align-items: center; 
+  justify-content: center; 
 }
 
-
+/* Setting up the table and modifying the look */
 table {
   border-spacing: 0px;
   margin: 50px auto;

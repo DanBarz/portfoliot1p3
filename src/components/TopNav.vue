@@ -1,4 +1,5 @@
 <script setup>
+// Props 
 defineProps({
   msg: {
     type: String,

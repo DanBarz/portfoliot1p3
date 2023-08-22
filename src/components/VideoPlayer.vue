@@ -22,7 +22,7 @@
 .video-wrapper {
   position: relative;
   width: 100%;
-  padding-top: 56.25%; /* 16:9 aspect ratio */
+  padding-top: 56.25%;
   overflow: hidden;
 }
 
@@ -32,7 +32,7 @@
   height: 100%;
   top: 0;
   left: 0;
-  object-fit: cover; /* Maintain aspect ratio and fill container */
+  object-fit: cover; 
   transform: translateY(-25%);
 }
 

@@ -1,5 +1,5 @@
 <template>
-    <!-- contact form template -->
+    <!-- contact form inputs -->
     <div class="formcontainer">
       <form @submit.prevent="submitForm">
         <label for="name">Name:</label><br>
@@ -16,12 +16,13 @@
         </label>
         <br>
         
-        using v-if and v-for
+        <!-- using v-if and v-for -->
         <h3>
             Where did you hear about us?
         </h3>
         <span>Selected: {{ selected_option }}</span>
         <br>
+        <!-- Drop down example -->
         <select v-model="selected_option">
             <option disabled value="">Please select one</option>
             <option>Google</option>
@@ -32,7 +33,7 @@
         </select>
         <br><br>
         <h3>How did you like my folio?</h3>
-        
+        <!-- Radio button example -->
         <div v-for="option in options" :key="option.value">
             <input type="radio" 
             :id="option.value" 

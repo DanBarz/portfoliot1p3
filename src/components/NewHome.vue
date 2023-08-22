@@ -1,4 +1,5 @@
 <script setup>
+// Imports required
 import ContactForm from './contact.vue'; 
 
 </script>
@@ -24,6 +25,7 @@ import ContactForm from './contact.vue';
   <div class="card-content">
     <h3>Contact Me</h3>
     <p>Feel free to contact me via the form below. I'll endeavour to respond to your message as soon as possible.</p>
+    <!-- Main contact form and example for all of the various coding options -->
     <div class="card-content">
     <ContactForm />
     </div>

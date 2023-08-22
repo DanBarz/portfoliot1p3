@@ -1,5 +1,6 @@
 <template>
 
+<!-- Setting up the About page cards - repeated on all pages -->
 <div class="about-card">
   <div class="card-title">
 
