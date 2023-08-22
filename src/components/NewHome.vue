@@ -73,33 +73,10 @@ import ContactForm from './contact.vue';
   margin: 30px auto;
 }
 
-table {
-  border-spacing: 0px;
-  margin: 50px auto;
-}
-
-table tr th,
-table tr td {
-  border: 1px solid white;
-  border-top: none;
-  padding: 10px;
-  text-align: center;
-}
-
-table tr th:first-of-type,
-table tr td:first-of-type {
-  border-left: none;
-}
-
-table tr th:nth-of-type(3),
-table tr td:nth-of-type(3) {
-  border-right: none;
-}
-
 a {
   color: white;
   text-decoration: none;
-}
+} 
 
 a:hover {
   text-decoration: underline;

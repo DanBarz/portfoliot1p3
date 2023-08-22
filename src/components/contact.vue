@@ -89,17 +89,7 @@
         };
     },
     methods: {
-        async submitForm() {
-            
-
-            // After successful submission
-            if (response.ok) {
-                this.submitted = true;
-                setTimeout(() => {
-                    this.submitted = false;  // Hide the success card after some time (e.g., 3 seconds)
-                }, 3000);
-            }
-        },
+        
         resetForm() {
             this.formData = {
                 name: '',
